@@ -10,17 +10,28 @@ public class PlayerMovement : MonoBehaviour
     public float runSpead = 40f;
     float horizontalMove = 0f;
     bool Jump = false;
+    bool Crouch = false;
 
     // Update is called once per frame
     void Update()
     {
       horizontalMove = Input.GetAxisRaw("Horizontal") * runSpead;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        if (Input.GetButtonDown("Jump"))
+        //if (Input.GetKeyDown(KeyCode.Space))
         {
-            Jump = true;
+          Jump = true;
         }
 
+        if (Input.GetButtonDown("Crouch"))
+        //if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Crouch = true;
+        } else if  (Input.GetButtonUp("Crouch"))  //(Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            Crouch = false;
+        }
 
     }
 
@@ -28,8 +39,10 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         //Where we move our charcter
-        controller.Move(horizontalMove * Time.fixedDeltaTime, false, Jump);
+        controller.Move(horizontalMove * Time.fixedDeltaTime, Crouch, Jump);
         Jump = false;
+
+
     }
 
 }
