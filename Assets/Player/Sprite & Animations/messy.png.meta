@@ -535,9 +535,9 @@ TextureImporter:
       name: FlameBoi_Boy_B1
       rect:
         serializedVersion: 2
-        x: 593
+        x: 590
         y: 269
-        width: 25
+        width: 30
         height: 57
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -556,9 +556,9 @@ TextureImporter:
       name: FlameBoi_Boy_B2
       rect:
         serializedVersion: 2
-        x: 644
+        x: 642
         y: 269
-        width: 25
+        width: 30
         height: 57
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -577,9 +577,9 @@ TextureImporter:
       name: FlameBoi_Boy_B4
       rect:
         serializedVersion: 2
-        x: 747
+        x: 745
         y: 269
-        width: 25
+        width: 30
         height: 57
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -600,7 +600,7 @@ TextureImporter:
         serializedVersion: 2
         x: 693
         y: 269
-        width: 28
+        width: 30
         height: 57
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -997,9 +997,9 @@ TextureImporter:
       name: FlameBoi_Boy_C21
       rect:
         serializedVersion: 2
-        x: 465
+        x: 463
         y: 90
-        width: 59
+        width: 60
         height: 95
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1020,8 +1020,8 @@ TextureImporter:
         serializedVersion: 2
         x: 712
         y: 90
-        width: 61
-        height: 87
+        width: 60
+        height: 90
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1039,9 +1039,9 @@ TextureImporter:
       name: FlameBoi_Boy_C9
       rect:
         serializedVersion: 2
-        x: 393
+        x: 389
         y: 90
-        width: 55
+        width: 60
         height: 61
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1060,10 +1060,10 @@ TextureImporter:
       name: FlameBoi_Boy_C23
       rect:
         serializedVersion: 2
-        x: 630
+        x: 629
         y: 90
-        width: 59
-        height: 86
+        width: 60
+        height: 90
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1081,10 +1081,10 @@ TextureImporter:
       name: FlameBoi_Boy_C
       rect:
         serializedVersion: 2
-        x: 13
+        x: 12
         y: 90
-        width: 19
-        height: 43
+        width: 20
+        height: 45
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1102,10 +1102,10 @@ TextureImporter:
       name: FlameBoi_Boy_C3
       rect:
         serializedVersion: 2
-        x: 137
+        x: 134
         y: 90
-        width: 19
-        height: 47
+        width: 25
+        height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1123,9 +1123,9 @@ TextureImporter:
       name: FlameBoi_Boy_C22
       rect:
         serializedVersion: 2
-        x: 550
+        x: 544
         y: 90
-        width: 54
+        width: 60
         height: 85
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1144,10 +1144,10 @@ TextureImporter:
       name: FlameBoi_Boy_C1
       rect:
         serializedVersion: 2
-        x: 54
+        x: 50
         y: 90
-        width: 19
-        height: 40
+        width: 25
+        height: 45
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1167,8 +1167,8 @@ TextureImporter:
         serializedVersion: 2
         x: 92
         y: 90
-        width: 24
-        height: 44
+        width: 25
+        height: 45
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1186,10 +1186,10 @@ TextureImporter:
       name: FlameBoi_Boy_C4
       rect:
         serializedVersion: 2
-        x: 178
+        x: 175
         y: 90
-        width: 19
-        height: 42
+        width: 25
+        height: 45
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1210,7 +1210,7 @@ TextureImporter:
         x: 217
         y: 90
         width: 25
-        height: 52
+        height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1228,10 +1228,10 @@ TextureImporter:
       name: FlameBoi_Boy_C6
       rect:
         serializedVersion: 2
-        x: 260
+        x: 257
         y: 90
-        width: 20
-        height: 51
+        width: 25
+        height: 50
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1249,10 +1249,10 @@ TextureImporter:
       name: FlameBoi_Boy_C7
       rect:
         serializedVersion: 2
-        x: 301
+        x: 299
         y: 90
-        width: 20
-        height: 27
+        width: 25
+        height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1270,9 +1270,9 @@ TextureImporter:
       name: FlameBoi_Boy_C8
       rect:
         serializedVersion: 2
-        x: 338
+        x: 336
         y: 90
-        width: 27
+        width: 30
         height: 45
       alignment: 7
       pivot: {x: 0.5, y: 0}
