@@ -7,6 +7,11 @@ public class PlayerMovement : MonoBehaviour
 
     public CharacterController2D controller;
 
+    //animation 
+    public Animator animator;
+    
+    
+    //movement
     public float runSpead = 40f;
     float horizontalMove = 0f;
     bool Jump = false;
@@ -17,11 +22,15 @@ public class PlayerMovement : MonoBehaviour
     {
       horizontalMove = Input.GetAxisRaw("Horizontal") * runSpead;
 
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-        if (Input.GetButtonDown("Jump"))
-        //if (Input.GetKeyDown(KeyCode.Space))
+
+        //if (Input.GetButtonDown("Jump"))
+       if (Input.GetKey(KeyCode.Space))
+        // if (Input.GetKeyDown(KeyCode.Space))
         {
           Jump = true;
+          animator.SetBool("IsJumping", true);
         }
 
         if (Input.GetButtonDown("Crouch"))
@@ -35,6 +44,15 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    public void OnLanding()
+    {
+        animator.SetBool("IsJumping", false);
+    }
+
+    public void OnCrouching ( bool isCrouching)
+    {
+        animator.SetBool("IsCrouching", isCrouching);
+    }
 
     private void FixedUpdate()
     {
