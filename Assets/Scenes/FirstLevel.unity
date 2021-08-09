@@ -174,7 +174,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.778626, y: 1}
+    m_SensorSize: {x: 1.7771318, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -788,6 +788,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8491346150023844065, guid: e5596355ac3fec74ca9550858f5ddea0, type: 3}
+      propertyPath: runSpead
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 8491346150023844088, guid: e5596355ac3fec74ca9550858f5ddea0, type: 3}
       propertyPath: m_Name
       value: Player_BOI
@@ -795,6 +799,10 @@ PrefabInstance:
     - target: {fileID: 8491346150023844091, guid: e5596355ac3fec74ca9550858f5ddea0, type: 3}
       propertyPath: m_JumpForce
       value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 8491346150023844091, guid: e5596355ac3fec74ca9550858f5ddea0, type: 3}
+      propertyPath: m_CrouchSpeed
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8491346150023844093, guid: e5596355ac3fec74ca9550858f5ddea0, type: 3}
       propertyPath: m_RootOrder

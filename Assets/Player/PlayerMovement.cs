@@ -32,13 +32,13 @@ public class PlayerMovement : MonoBehaviour
           animator.SetBool("IsJumping", true);
         }
 
-       // if (Input.GetButtonDown("Crouch"))
-        //if (Input.GetKeyDown(KeyCode.LeftShift))
-        if (Input.GetKey(KeyCode.DownArrow))
+       
+       
+        if (Input.GetKey(KeyCode.DownArrow))                    // if (Input.GetButtonDown("Crouch"))
         {
             Crouch = true;
-        } else if (Input.GetKey(KeyCode.UpArrow))
-            //(Input.GetButtonUp("Crouch"))  
+        } else if(Input.GetKey(KeyCode.UpArrow))              //(Input.GetButtonUp("Crouch"))  
+            
         {
             Crouch = false;
         }
