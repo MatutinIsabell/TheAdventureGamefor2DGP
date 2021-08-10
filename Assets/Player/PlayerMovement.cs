@@ -10,44 +10,65 @@ public class PlayerMovement : MonoBehaviour
     //animation 
     public Animator animator;
     
-    
+
+
     //movement
     public float runSpead = 40f;
     float horizontalMove = 0f;
     bool Jump = false;
     bool Crouch = false;
+    bool IsJumpingifCrouching = false;
 
     // Update is called once per frame
     void Update()
     {
-      horizontalMove = Input.GetAxisRaw("Horizontal") * runSpead;
+        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpead;
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
 
-        //if (Input.GetButtonDown("Jump"))
-       if (Input.GetKey(KeyCode.Space))
-        // if (Input.GetKeyDown(KeyCode.Space))
-        {
-          Jump = true;
-          animator.SetBool("IsJumping", true);
-        }
 
-        if (Input.GetButtonDown("Crouch"))
-        //if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            Crouch = true;
-        } else if  (Input.GetButtonUp("Crouch"))  //(Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            Crouch = false;
-        }
 
+        if (Crouch == true)
+        {
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                Jump = true;
+                animator.SetBool("IsJumpingifCrouching", true);
+            }
+        }
+        else if (Input.GetKey(KeyCode.UpArrow))
+            {
+                Jump = true;
+                animator.SetBool("IsJumping", true);
+            }
+        
+       
+        if (Input.GetKeyDown(KeyCode.DownArrow))                  
+        {
+            Crouch = !Crouch;
+
+            //animator.SetBool("IsJumpingifCrouching", true);
+
+        } 
+        
     }
 
     public void OnLanding()
     {
-        animator.SetBool("IsJumping", false);
+        
+
+       if(Crouch == false)
+        {
+            animator.SetBool("IsJumping", false);
+        }else if (Crouch == true)
+        {
+            animator.SetBool("IsJumpingifCrouching", false);
+        }
+    
+    
     }
+
 
     public void OnCrouching ( bool isCrouching)
     {
@@ -56,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Where we move our charcter
+        //when we move our charcter
         controller.Move(horizontalMove * Time.fixedDeltaTime, Crouch, Jump);
         Jump = false;
 
