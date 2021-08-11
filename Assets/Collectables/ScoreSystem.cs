@@ -6,15 +6,38 @@ using UnityEngine.UI;
 public class ScoreSystem : MonoBehaviour
 {
     public GameObject scoreText;
-    public int theScore;
-    public AudioSource collectGemSound;
+   // public int foodScore;
+   // public int gemScore;
+    public static int bothScores;
 
 
-    void OnTriggerEnter2D(Collider2D collision)
+
+    void Update()
     {
-        collectGemSound.Play();
-        theScore += 100;
-        scoreText.GetComponent<Text>().text = "Score: " + theScore;
+        scoreText.GetComponent<Text>().text = "Score: " + bothScores;
         
     }
+
+
+
+    //void OnTriggerEnter2D(Collider2D collision)
+    //{
+
+    //    if (collision.CompareTag("Collectable_Gems"))
+    //    {
+    //        print("+100");
+
+    //    }
+
+    //    if (collision.CompareTag("Collectable_Food"))
+    //    {
+    //        print("+5");
+
+    //    }
+
+    //}
+
+
+
+
 }
