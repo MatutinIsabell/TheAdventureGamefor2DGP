@@ -13,8 +13,8 @@ public class ScoreSystem : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         collectGemSound.Play();
-        theScore += 50;
+        theScore += 100;
         scoreText.GetComponent<Text>().text = "Score: " + theScore;
-        Destroy(gameObject);
+        
     }
 }
