@@ -149,27 +149,19 @@ public class CharacterController2D : MonoBehaviour
     {
 		if (collision.CompareTag("Collectable_Gems"))
         {
-			print("you have a gem");
-
+			//print("you have a gem");
 			Destroy(collision.gameObject);
 
         }
 
 		if (collision.CompareTag("Collectable_Food"))
 		{
-			print("FOOD");
-
+			//print("FOOD");
 			Destroy(collision.gameObject);
 
 		}
 
-
-
 	}
 
 	
-
-
-
-
 }
