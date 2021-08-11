@@ -143,4 +143,25 @@ public class CharacterController2D : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+		if (collision.CompareTag("Collectable_Gems"))
+        {
+			//print("you have a gem");
+			Destroy(collision.gameObject);
+
+        }
+
+		if (collision.CompareTag("Collectable_Food"))
+		{
+			//print("FOOD");
+			Destroy(collision.gameObject);
+
+		}
+
+	}
+
+	
 }
