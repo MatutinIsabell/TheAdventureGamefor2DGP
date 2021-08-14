@@ -8,9 +8,7 @@ public class CollectingFood : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-
-        collectSound.Play();
-        ScoreSystem.bothScores += 6;
-
+       collectSound.Play();
+       ScoreSystem.bothScores += 6;
     }
 }
