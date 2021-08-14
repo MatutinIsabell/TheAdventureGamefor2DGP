@@ -11,7 +11,7 @@ public class CollectingGems : MonoBehaviour
     {
         
        collectSound.Play();
-       ScoreSystem.bothScores += 50;
+       ScoreSystem.bothScores += 80;
 
     }
 
