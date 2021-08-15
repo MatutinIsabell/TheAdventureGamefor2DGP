@@ -47,8 +47,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.DownArrow))                  
         {
             Crouch = !Crouch;
-
-            //animator.SetBool("IsJumpingifCrouching", true);
+                      
 
         } 
         
@@ -61,9 +60,12 @@ public class PlayerMovement : MonoBehaviour
        if(Crouch == false)
         {
             animator.SetBool("IsJumping", false);
-        }else if (Crouch == true)
+            
+        }
+        else if (Crouch == true)
         {
             animator.SetBool("IsJumpingifCrouching", false);
+            
         }
     
     
@@ -72,7 +74,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnCrouching ( bool isCrouching)
     {
-        animator.SetBool("IsCrouching", isCrouching);
+       
+            animator.SetBool("IsCrouching", isCrouching);
+       
     }
 
     private void FixedUpdate()
