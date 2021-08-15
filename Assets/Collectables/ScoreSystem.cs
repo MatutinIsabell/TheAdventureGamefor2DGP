@@ -8,12 +8,9 @@ public class ScoreSystem : MonoBehaviour
     public GameObject scoreText;
     public static int bothScores;
 
-
-
     void Update()
     {
-        scoreText.GetComponent<Text>().text = "Score: " + bothScores;
-        
+        scoreText.GetComponent<Text>().text = "      : " + bothScores;
     }
 
 
