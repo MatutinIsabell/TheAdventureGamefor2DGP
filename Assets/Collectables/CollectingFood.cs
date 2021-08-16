@@ -5,6 +5,8 @@ using UnityEngine;
 public class CollectingFood : MonoBehaviour
 {
     public AudioSource collectSound;
+    public GameObject playerG;
+    public GameObject playerB;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
