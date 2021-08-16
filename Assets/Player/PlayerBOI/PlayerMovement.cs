@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     //animation 
     public Animator animator;
-    
+
 
 
     //movement
@@ -38,41 +38,45 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         else if (Input.GetKey(KeyCode.UpArrow))
-            {
-                Jump = true;
-                animator.SetBool("IsJumping", true);
-            }
-        
-       
-        if (Input.GetKeyDown(KeyCode.DownArrow))                  
+        {
+            Jump = true;
+            animator.SetBool("IsJumping", true);
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             Crouch = !Crouch;
 
-            //animator.SetBool("IsJumpingifCrouching", true);
 
-        } 
-        
+        }
+
     }
 
     public void OnLanding()
     {
-        
 
-       if(Crouch == false)
+
+        if (Crouch == false)
         {
             animator.SetBool("IsJumping", false);
-        }else if (Crouch == true)
+
+        }
+        else if (Crouch == true)
         {
             animator.SetBool("IsJumpingifCrouching", false);
+
         }
-    
-    
+
+
     }
 
 
-    public void OnCrouching ( bool isCrouching)
+    public void OnCrouching(bool isCrouching)
     {
+
         animator.SetBool("IsCrouching", isCrouching);
+
     }
 
     private void FixedUpdate()
