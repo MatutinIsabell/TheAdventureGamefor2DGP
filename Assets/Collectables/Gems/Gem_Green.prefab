@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1887670193140398058}
   - component: {fileID: 1887670193140398059}
   - component: {fileID: 1887670193140398056}
+  - component: {fileID: 1337530461}
   m_Layer: 0
   m_Name: Gem_Green
   m_TagString: Collectable_Gems
@@ -100,3 +101,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.625
+--- !u!114 &1337530461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887670193140398057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb43695a3626394f9105730556bd9a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectSound: {fileID: 0}
