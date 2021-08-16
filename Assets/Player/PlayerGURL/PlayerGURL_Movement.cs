@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerGURL_Movement : MonoBehaviour
 {
-
     public CharacterController2D controller;
 
     //animation 
     public Animator animator;
+
 
 
     //movement
@@ -18,46 +18,31 @@ public class PlayerMovement : MonoBehaviour
     bool Crouch = false;
     bool IsJumpingifCrouching = false;
 
-    public bool isPlayer1 = true;
-
-
     // Update is called once per frame
     void Update()
     {
-        //if (isPlayer1)
-        //{
-        //    horizontalMove = Input.GetAxisRaw("BoiHorizontal") * runSpead;
-        //}
-        //else
-        //{
-        //    horizontalMove = Input.GetAxisRaw("GurlHorizontal") * runSpead;
-        //}
-
-        
-        
-        horizontalMove = Input.GetAxisRaw("BoiHorizontal") * runSpead;
+        horizontalMove = Input.GetAxisRaw("GurlHorizontal") * runSpead;
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
 
 
-
         if (Crouch == true)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
                 Jump = true;
                 animator.SetBool("IsJumpingifCrouching", true);
             }
         }
-        else if (Input.GetKey(KeyCode.UpArrow))
+        else if (Input.GetKey(KeyCode.W))
         {
             Jump = true;
             animator.SetBool("IsJumping", true);
         }
 
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             Crouch = !Crouch;
 
@@ -100,6 +85,4 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
-
 }
-
