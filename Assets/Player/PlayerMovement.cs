@@ -24,16 +24,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (isPlayer1)
-        //{
-        //    horizontalMove = Input.GetAxisRaw("BoiHorizontal") * runSpead;
-        //}
-        //else
-        //{
-        //    horizontalMove = Input.GetAxisRaw("GurlHorizontal") * runSpead;
-        //}
-
-        
+               
         
         horizontalMove = Input.GetAxisRaw("BoiHorizontal") * runSpead;
 
@@ -41,6 +32,11 @@ public class PlayerMovement : MonoBehaviour
 
 
 
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Crouch = !Crouch;
+
+        }
 
         if (Crouch == true)
         {
@@ -57,18 +53,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            Crouch = !Crouch;
-
-
-        }
 
     }
 
     public void OnLanding()
     {
-
 
         if (Crouch == false)
         {
