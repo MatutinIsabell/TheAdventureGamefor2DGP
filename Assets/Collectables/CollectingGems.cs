@@ -5,11 +5,12 @@ using UnityEngine;
 public class CollectingGems : MonoBehaviour
 {
     public AudioSource collectSound;
-
+   
     void OnTriggerEnter2D(Collider2D collision)
     {
        collectSound.Play();
-       ScoreSystem.bothScores += 80;
+       GURLS_ScoringSystem.gurlScores += 80;
+       BOIS_ScoreingSystem.boisScores += 80;
     }
 
 
