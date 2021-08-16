@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
 
 
-
     //movement
     public float runSpead = 40f;
     float horizontalMove = 0f;
@@ -19,10 +18,24 @@ public class PlayerMovement : MonoBehaviour
     bool Crouch = false;
     bool IsJumpingifCrouching = false;
 
+    public bool isPlayer1 = true;
+
+
     // Update is called once per frame
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpead;
+        //if (isPlayer1)
+        //{
+        //    horizontalMove = Input.GetAxisRaw("BoiHorizontal") * runSpead;
+        //}
+        //else
+        //{
+        //    horizontalMove = Input.GetAxisRaw("GurlHorizontal") * runSpead;
+        //}
+
+        
+        
+        horizontalMove = Input.GetAxisRaw("BoiHorizontal") * runSpead;
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 

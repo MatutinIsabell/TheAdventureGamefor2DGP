@@ -21,7 +21,7 @@ public class PlayerGURL_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpead;
+        horizontalMove = Input.GetAxisRaw("GurlHorizontal") * runSpead;
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
