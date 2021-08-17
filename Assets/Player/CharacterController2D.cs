@@ -145,6 +145,8 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 
+	//collecting gems and food
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
 		if (collision.CompareTag("Collectable_Gems"))
