@@ -10,8 +10,19 @@ public class CollectingFood : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject == playerB)
+        {
+            BOIS_ScoreingSystem.boisScores += 80;
+
+        }
+
         collectSound.Play();
-        GURLS_ScoringSystem.gurlScores += 6;
-        BOIS_ScoreingSystem.boisScores += 6;
+
+        if (collision.gameObject == playerG)
+        {
+            GURLS_ScoringSystem.gurlScores += 80;
+
+        }
+
     }
 }

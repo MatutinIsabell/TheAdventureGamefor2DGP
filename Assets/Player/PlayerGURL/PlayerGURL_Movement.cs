@@ -26,6 +26,12 @@ public class PlayerGURL_Movement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
 
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            Crouch = !Crouch;
+
+
+        }
 
         if (Crouch == true)
         {
@@ -42,12 +48,6 @@ public class PlayerGURL_Movement : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            Crouch = !Crouch;
-
-
-        }
 
     }
 

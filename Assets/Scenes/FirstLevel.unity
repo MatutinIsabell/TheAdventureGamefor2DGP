@@ -131,6 +131,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 2043542900}
     m_Modifications:
     - target: {fileID: 705104127, guid: 7543e26347da643448330082fd884bcd, type: 3}
+      propertyPath: playerB
+      value: 
+      objectReference: {fileID: 1616227559}
+    - target: {fileID: 705104127, guid: 7543e26347da643448330082fd884bcd, type: 3}
+      propertyPath: playerG
+      value: 
+      objectReference: {fileID: 528753549}
+    - target: {fileID: 705104127, guid: 7543e26347da643448330082fd884bcd, type: 3}
       propertyPath: collectSound
       value: 
       objectReference: {fileID: 759188151}
@@ -352,11 +360,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 574104226297262255, guid: ad231763f2f13b54ba1cdbead307ae86, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 148.6
+      value: 5.4
       objectReference: {fileID: 0}
     - target: {fileID: 574104226297262255, guid: ad231763f2f13b54ba1cdbead307ae86, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.5
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 574104226297262255, guid: ad231763f2f13b54ba1cdbead307ae86, type: 3}
       propertyPath: m_LocalPosition.z
