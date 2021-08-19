@@ -10,21 +10,23 @@ public class CollectingGems : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject == playerB)
-        {
-            BOIS_ScoreingSystem.boisScores += 80;
-
-        }
-
         collectSound.Play();
 
-        if (collision.gameObject == playerG)
+
+        if (collision.gameObject == playerB)
         {
-            GURLS_ScoringSystem.gurlScores += 80;
+            NewScoringSystem.boisScores += 80;
 
         }
-    }
+        else if (collision.gameObject == playerG)
+        {
+            NewScoringSystem.gurlScores += 80;
 
+        }
+       
+        
+            
+    }
 
 
 
