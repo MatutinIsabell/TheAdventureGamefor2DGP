@@ -114,3 +114,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectSound: {fileID: 0}
+  playerG: {fileID: 574104226297262250, guid: ad231763f2f13b54ba1cdbead307ae86, type: 3}
+  playerB: {fileID: 8491346150023844088, guid: e636891add5e2da4d9158f6580507164, type: 3}

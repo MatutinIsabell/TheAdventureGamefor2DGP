@@ -24,12 +24,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-               
-        
         horizontalMove = Input.GetAxisRaw("BoiHorizontal") * runSpead;
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
-
 
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -51,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
             Jump = true;
             animator.SetBool("IsJumping", true);
         }
-
+        OnCrouching(Crouch);
 
 
     }

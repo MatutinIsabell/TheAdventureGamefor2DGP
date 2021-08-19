@@ -30,7 +30,6 @@ public class PlayerGURL_Movement : MonoBehaviour
         {
             Crouch = !Crouch;
 
-
         }
 
         if (Crouch == true)
@@ -46,7 +45,7 @@ public class PlayerGURL_Movement : MonoBehaviour
             Jump = true;
             animator.SetBool("IsJumping", true);
         }
-
+        OnCrouching(Crouch);
 
 
     }
