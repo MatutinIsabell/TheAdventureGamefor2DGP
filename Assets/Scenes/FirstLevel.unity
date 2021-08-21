@@ -222,7 +222,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2118154834}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -421,7 +421,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2118154834}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d16c6723fb024c4abe6225f5ccafc28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelToLoad: 
+  LevelToLoad: GameOverMenu
 --- !u!114 &272716882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,11 +677,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 520225767, guid: ad231763f2f13b54ba1cdbead307ae86, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -481
+      value: -1407
       objectReference: {fileID: 0}
     - target: {fileID: 520225767, guid: ad231763f2f13b54ba1cdbead307ae86, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -95
+      value: -89
       objectReference: {fileID: 0}
     - target: {fileID: 574104226297262250, guid: ad231763f2f13b54ba1cdbead307ae86, type: 3}
       propertyPath: m_Name
@@ -1266,7 +1266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d16c6723fb024c4abe6225f5ccafc28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelToLoad: 
+  LevelToLoad: GameOverMenu
 --- !u!114 &729624388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3167,7 +3167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1739449394, guid: e636891add5e2da4d9158f6580507164, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 478.9
+      value: 1411
       objectReference: {fileID: 0}
     - target: {fileID: 1739449394, guid: e636891add5e2da4d9158f6580507164, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -103170,8 +103170,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 295122946}
-  - {fileID: 272716880}
   - {fileID: 132953671}
+  - {fileID: 272716880}
   - {fileID: 729624386}
   m_Father: {fileID: 0}
   m_RootOrder: 19
