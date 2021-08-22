@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CountdownTimer : MonoBehaviour
 {
-    public string LevelToLoad;
+    public GameObject LevelToLoad;
     private float timer = 50f;
     private Text timerSeconds;
     
@@ -17,10 +18,10 @@ public class CountdownTimer : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        timerSeconds.text = timer.ToString("f2");
+        timerSeconds.text = timer.ToString("f0");
         if (timer <= 0)
         {
-            Application.LoadLevel(LevelToLoad);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
