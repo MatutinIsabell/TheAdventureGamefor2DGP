@@ -562,6 +562,14 @@ PrefabInstance:
       propertyPath: collectSound
       value: 
       objectReference: {fileID: 1943949364}
+    - target: {fileID: 8833496145691970822, guid: 0e2cff97d639159419303ba3413cabe1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833496145691970822, guid: 0e2cff97d639159419303ba3413cabe1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 8833496146223590732, guid: 0e2cff97d639159419303ba3413cabe1, type: 3}
       propertyPath: playerB
       value: 
@@ -607,6 +615,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 251278210853038374, guid: 322babcd5cd4fc948823d9335e2c7413, type: 3}
+      propertyPath: playerB
+      value: 
+      objectReference: {fileID: 1618744127}
+    - target: {fileID: 251278210853038374, guid: 322babcd5cd4fc948823d9335e2c7413, type: 3}
+      propertyPath: playerG
+      value: 
+      objectReference: {fileID: 169878101}
+    - target: {fileID: 251278210853038374, guid: 322babcd5cd4fc948823d9335e2c7413, type: 3}
+      propertyPath: collectSound
+      value: 
+      objectReference: {fileID: 2147327593}
     - target: {fileID: 4249113702628755568, guid: 322babcd5cd4fc948823d9335e2c7413, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1450,6 +1470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AUDIO_FoodPickUp
       objectReference: {fileID: 0}
+    - target: {fileID: 5285703078873282213, guid: c35f1a90f1ef2fb448e5b5e2b9a6768d, type: 3}
+      propertyPath: m_TagString
+      value: AUDIO_Food
+      objectReference: {fileID: 0}
     - target: {fileID: 7466893430898972861, guid: c35f1a90f1ef2fb448e5b5e2b9a6768d, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -1756,6 +1780,10 @@ PrefabInstance:
     - target: {fileID: 8491346150023844088, guid: e636891add5e2da4d9158f6580507164, type: 3}
       propertyPath: m_Name
       value: Player_BOI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8491346150023844088, guid: e636891add5e2da4d9158f6580507164, type: 3}
+      propertyPath: m_TagString
+      value: playerBOI
       objectReference: {fileID: 0}
     - target: {fileID: 8491346150023844093, guid: e636891add5e2da4d9158f6580507164, type: 3}
       propertyPath: m_RootOrder
@@ -102216,6 +102244,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 49
       objectReference: {fileID: 0}
+    - target: {fileID: 9159958319239532965, guid: ad231763f2f13b54ba1cdbead307ae86, type: 3}
+      propertyPath: m_TagString
+      value: playerGURL
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 160908280675384964, guid: ad231763f2f13b54ba1cdbead307ae86, type: 3}
     - {fileID: 3582965332829715992, guid: ad231763f2f13b54ba1cdbead307ae86, type: 3}
@@ -102649,3 +102681,8 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132515486}
   m_Enabled: 1
+--- !u!82 &2147327593 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7466893430898972861, guid: c35f1a90f1ef2fb448e5b5e2b9a6768d, type: 3}
+  m_PrefabInstance: {fileID: 1336010173}
+  m_PrefabAsset: {fileID: 0}

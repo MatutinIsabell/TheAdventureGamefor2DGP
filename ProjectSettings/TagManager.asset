@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Collectable_Gems
   - Collectable_Food
+  - playerBOI
+  - playerGURL
+  - AUDIO_Food
   layers:
   - Default
   - TransparentFX
