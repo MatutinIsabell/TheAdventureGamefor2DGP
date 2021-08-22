@@ -8,9 +8,20 @@ public class CollectingFood : MonoBehaviour
     public GameObject playerG;
     public GameObject playerB;
 
+
+    private void Start()
+    {
+        playerG = GameObject.FindGameObjectWithTag("playerGURL");
+        playerB = GameObject.FindGameObjectWithTag("playerBOI");
+        collectSound = GameObject.FindGameObjectWithTag("AUDIO_Food").GetComponent<AudioSource>();
+    }
+
+
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         collectSound.Play();
+
 
 
         if (collision.gameObject == playerB)
