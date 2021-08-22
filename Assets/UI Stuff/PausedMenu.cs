@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class PausedMenu : MonoBehaviour
 {
@@ -49,7 +49,7 @@ public class PausedMenu : MonoBehaviour
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
-        EditorSceneManager.LoadScene("StartMenu");
+        SceneManager.LoadScene("StartMenu");
     }
 
     public void QuitGame()

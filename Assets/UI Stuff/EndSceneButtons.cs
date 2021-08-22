@@ -1,22 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class EndSceneButtons : MonoBehaviour
 {
-
- 
-
-
+    
     public void RestartLevel()
     {
-        EditorSceneManager.LoadScene("FirstLevel");
+      SceneManager.LoadScene("FirstLevel");
+        
     }
 
     public void GoToMainMenu()
     {
-      EditorSceneManager.LoadScene("StartMenu");
+      SceneManager.LoadScene("StartMenu");
     }
 
     public void QuitGame()
